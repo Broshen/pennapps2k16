@@ -48,22 +48,27 @@
     <div class="classWithPad">
       <h3 id="today"></h3>
       <div id="details"></div>
+      <h4>Morning:</h4>
+          <p class="asdf">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <h4>Afternoon:</h4>
+        <p class="asdf">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <h4>Evening:</h4>
+        <p class="asdf">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <h4 style="display:inline-block;">Goal Completition:</h4>
+        <p class="asdf" style="display:inline-block;">Lorem</p>
       <script>
       updateDetails=function(date){
         document.getElementById("today").innerHTML =dateFormat(date, "ddd, mmm dd, yyyy");
-        $.post("info.php",{date:dateFormat(date,"yyyy-mm-dd")},function(data){
-          $("#details").html(data);
+        $.post("http://454bc06c.ngrok.io/dear_me/info.php",{date:dateFormat(date,"yyyy-mm-dd")},function(data){
+          data=jQuery.parseJSON(data)
+          $(".asdf")[0].innerHTML=data['text1'];
+          $(".asdf")[1].innerHTML=data['text2'];
+          $(".asdf")[2].innerHTML=data['text3'];
+          $(".asdf")[3].innerHTML=data['goalcompletion'];
+
         });
       }
       </script>
-      <h4>Morning:</h4>
-        <div class="extraNotes">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-      <h4>Afternoon:</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <h4>Evening:</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
     </div>
   </div>
