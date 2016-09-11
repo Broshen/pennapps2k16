@@ -1,0 +1,32 @@
+.col-md-8 {
+  background-color: #DAECF3 ;
+}
+
+body {
+	background-color: #DAECF3;
+	color :#5F5A51;
+	font-family: 'Lato';
+}
+
+.col-md-4 {
+  background-color: #DAECF3;
+}
+
+
+button {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  background-color: #c5ecd7;
+  margin-top:7px;
+  color:#5F5A51;
+}
+
+#today {
+	text-align: center;
+}
+
+.classWithPad { 
+	margin:10px; 
+	padding:10px;
+	background-color:#F6f0e4; 
+}

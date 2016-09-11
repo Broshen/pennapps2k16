@@ -13,6 +13,4 @@ function sendMsg($PhoneNumber, $Text){
 	return $response;
 }
 
-
-
 ?>
