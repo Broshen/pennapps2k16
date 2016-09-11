@@ -1,7 +1,10 @@
 <?php
 
+
+error_log("connect to db started");
+
 //Connect to the database
-$servername = "[2607:f470:6:400f:d89e:d25c:fc45:ff74]";
+$servername = "[2607:f470:6:400f:599e:8ed8:756d:7c9]";
 $username = "notroot";
 $password = "password";
 
@@ -23,4 +26,6 @@ $row = mysqli_fetch_assoc($result);
 
 $response = $row['state']; 
 
+
+error_log("connect to db finished");
 ?>

@@ -1,6 +1,6 @@
 <?php
-$servername = "127.0.0.1";
-$username = "root";
+$servername = "[2607:f470:6:400f:d89e:d25c:fc45:ff74]";
+$username = "notroot";
 $password = "password";
 
 // Create connection

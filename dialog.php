@@ -1,5 +1,8 @@
 <?php
 
+
+error_log("dialog.php started");
+
 $phonenumber='16478789158';
 
 //morning
@@ -16,9 +19,7 @@ $text[7] = "On a scale from 1-5, how far did you progress on your goal today?";
 $text[8] = "Good night! See you tomorrow.";
 
 
-function sendResponse($phonenumber, $text, $index){
-	sendMsg($phonenumber, $text[$index]);
-}
+error_log("dialog.php ended");
 
 //based on conversation flow, send the appropriate message
 //morning
