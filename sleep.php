@@ -1,5 +1,5 @@
 <?php
-$servername = "[2607:f470:6:400f:d89e:d25c:fc45:ff74]";
+$servername = "[http://9d8b540c.ngrok.io]";
 $username = "notroot";
 $password = "password";
 
