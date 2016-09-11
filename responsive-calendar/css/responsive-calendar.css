@@ -8,6 +8,7 @@
 }
 .responsive-calendar .controls {
   text-align: center;
+  margin-top:7px;
 }
 .responsive-calendar .controls a {
   cursor: pointer;
